@@ -60,9 +60,16 @@ public class Hospital {
         String cadena = String.format("Nombre: %s\nCiudad: %s\nNumero de "
                 + "Doctores: %d\nNumero de enfermeros: %d\n"
                 + "======================================================"
-                + "", obtenerNombre(),ciudad,obtenerNumeroDoctores(),
+                + "", obtenerNombre(),ciudad
+                /*
+                Se puede usar una variable en lugar del metodo obtenerCiudad en 
+                este caso ya que el toString toma el valor que se le dio a 
+                ciudad por cualquier metodo mientras el valor se haya guardado 
+                en esa variable presentara dicho valor
+                */
+                ,obtenerNumeroDoctores(),
                 obtenerNumeroEnfermeros());
         return cadena;
     }
-
+    
 }
