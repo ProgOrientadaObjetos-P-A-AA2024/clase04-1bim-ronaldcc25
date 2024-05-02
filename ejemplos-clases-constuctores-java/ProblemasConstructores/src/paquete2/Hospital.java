@@ -23,8 +23,8 @@ public class Hospital {
     
     
     public Hospital(String x, String y, int a, int b){
-        nombre = "na";
-        ciudad = "ciu";
+        nombre = "Idifro ayora";
+        ciudad = "Looja";
         numeroDoctores = 100;
         numeroEnfermeros = 400;
     }
@@ -64,7 +64,6 @@ public class Hospital {
         return numeroEnfermeros;
     }
     
-    @Override
     public String toString(){
         // String cadena = String.format("%s \n", nombre);
         String cadena = String.format("%s \n", obtenerNombre());
